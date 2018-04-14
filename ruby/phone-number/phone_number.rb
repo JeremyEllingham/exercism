@@ -3,7 +3,7 @@ class PhoneNumber
   # Cleans phone number (string) to comply with North American Numbering Plan (NANP) standard
   # If input is valid, returns 10 character, digits only string
   # If input is invalid, returns nil
-  def clean(input)
+  def self.clean(input)
     # Remove all characters except integers
     # Catches both letters and special characters
     @temp = input

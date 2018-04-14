@@ -3,7 +3,7 @@ class Hamming
   # Takes two strings of equal length and returns the Hamming distance
   # Returns ArgumentError if strings are different length
   # Returns an integer
-  def compute(sequence1, sequence2)
+  def self.compute(sequence1, sequence2)
     @sequence1 = sequence1
     @sequence2 = sequence2
     @hamming_distance = 0
