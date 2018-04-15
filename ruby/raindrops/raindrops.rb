@@ -9,13 +9,12 @@ class Raindrops
   # Converts an integer into a Raindrops language string
   # Returns the plain integer as a string if no Raindrops modifications are made
   def self.convert(input)
-    @input = input
-    @output = ''
+    output = ''
 
-    RAINDROPS.each { |integer, text| @output += text if @input % integer == 0 }
-    @output = @input.to_s if @output == ''
+    RAINDROPS.each { |integer, text| output += text if input % integer == 0 }
+    output = input.to_s if output == ''
 
-    @output
+    output
   end
 
 end
