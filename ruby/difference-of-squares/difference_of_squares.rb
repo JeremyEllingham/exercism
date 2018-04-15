@@ -6,16 +6,16 @@ class Squares
 
   # Returns (1 + 2 + 3 + 4 ... + @number)**2
   def square_of_sum
-    @result = 0
-    (1..@number).each { |int| @result += int}
-    @result**2
+    result = 0
+    (1..@number).each { |int| result += int}
+    result**2
   end
 
   # Returns 1**2 + 2**2 + 3**2 + 4**2 ... + @number**2
   def sum_of_squares
-    @result = 0
-    (1..@number).each { |int| @result += int**2}
-    @result
+    result = 0
+    (1..@number).each { |int| result += int**2}
+    result
   end
 
   def difference
