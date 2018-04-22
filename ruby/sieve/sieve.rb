@@ -9,10 +9,8 @@ class Sieve
   def primes
     result = (2..@maximum).to_a
 
-    result.each do |counter|
-      for int in result
-        result.delete(int) if (int != counter) && (int % counter == 0)
-      end
+    result.each do |x|
+      result.delete_if { |y| y != x && y % x == 0 }
     end
 
     result
